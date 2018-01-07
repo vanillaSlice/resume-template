@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Smith | Resume</title>
+  <meta name="description" content="Experienced Web Developer">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#1c8cd5">
+  <meta name="theme-color" content="#1c8cd5">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+</head>
+
+<body>
+  <div class="paper">
+    <header>
+      <nav>
+        <div class="container">
+          <input class="hidden" id="hello-btn" type="radio" name="page" value="hello" checked>
+          <label for="hello-btn">Hello</label>
+          <input class="hidden" id="resume-btn" type="radio" name="page" value="resume">
+          <label for="resume-btn">Resume</label>
+          <input class="hidden" id="portfolio-btn" type="radio" name="page" value="portfolio">
+          <label for="portfolio-btn">Portfolio</label>
+        </div>
+      </nav>
+      <div class="branding">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 float-right">
+              <img class="img-circle" src="./photo.png" alt="David Smith" width="125" height="125">
+            </div>
+            <div class="col-xs-12 col-sm-6 float-left">
+              <h1>David Smith</h1>
+              <h2>Web Developer</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="pages">
+      <!-- hello page -->
+      <div class="page" id="hello">
+        <div class="row">
+          <aside class="col-xs-12 col-sm-4 aside aside-default">
+            <div class="container">
+              <h3>To</h3>
+              <address>
+                John Doe<br>
+                7 Thorns Villa Gardens<br>
+                Worsley<br>
+                Manchester M28 1UT<br>
+                UK
+              </address>
+              <hr>
+              <h3>Position</h3>
+              <p>Web Developer</p>
+              <hr>
+              <h3>Reference No.</h3>
+              <p>APP1234567890</p>
+              <hr>
+              <h3>Date</h3>
+              <p>15<sup>th</sup> January 2017</p>
+              <hr>
+            </div>
+          </aside>
+          <main class="col-xs-12 col-sm-8 main main-default">
+            <div class="container">
+              <p>Dear Mr Jones,</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Odio facilisis mauris sit amet massa vitae tortor condimentum. Fermentum leo vel orci porta non pulvinar neque.
+                Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin.
+              </p>
+              <p>
+                Pellentesque elit ullamcorper dignissim cras tincidunt. Ac tortor dignissim convallis aenean et tortor at. Risus feugiat
+                in ante metus dictum at tempor commodo ullamcorper. Quam elementum pulvinar etiam non. Quis blandit turpis cursus
+                in hac habitasse platea dictumst. Scelerisque fermentum dui faucibus in ornare quam viverra orci. Leo in vitae
+                turpis massa. Lacus sed turpis tincidunt id aliquet. Viverra nibh cras pulvinar mattis nunc sed blandit libero
+                volutpat. Mauris augue neque gravida in fermentum et sollicitudin ac. Justo laoreet sit amet cursus sit amet
+                dictum sit.
+              </p>
+              <p>
+                Adipiscing commodo elit at imperdiet dui accumsan. Pulvinar neque laoreet suspendisse interdum consectetur. Egestas tellus
+                rutrum tellus pellentesque eu tincidunt tortor aliquam. Maecenas volutpat blandit aliquam etiam erat velit scelerisque.
+                Ipsum nunc aliquet bibendum enim facilisis gravida neque.
+              </p>
+              <p>
+                Dui accumsan sit amet nulla facilisi morbi. Ornare arcu dui vivamus arcu. Sed cras ornare arcu dui vivamus arcu felis bibendum
+                ut. Magna sit amet purus gravida quis. A erat nam at lectus urna duis convallis convallis. At varius vel pharetra
+                vel turpis nunc eget. Sed augue lacus viverra vitae congue eu consequat ac.
+              </p>
+              <p>
+                Ornare quam viverra orci sagittis. Quam quisque id diam vel quam elementum pulvinar etiam non. Ultrices in iaculis nunc sed
+                augue lacus. Cursus risus at ultrices mi tempus imperdiet. Amet commodo nulla facilisi nullam vehicula ipsum
+                a arcu cursus. Tellus mauris a diam maecenas sed enim. Scelerisque mauris pellentesque pulvinar pellentesque
+                habitant morbi tristique. In fermentum posuere urna nec tincidunt praesent.
+              </p>
+              <img src="./signature.png" alt="Signature" width="300" height="72">
+              <p>
+                <b>David Smith</b>
+                <br>Web Developer
+              </p>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- resume page -->
+      <div class="page hidden" id="resume">
+        Resume
+      </div>
+      
+      <!-- portfolio page -->
+      <div class="page hidden" id="portfolio">
+        Portfolio
+      </div>
+    </div>
+
+    <footer>
+      <div class="social">
+        <div class="container">
+          <ul class="list-inline list-unstyled row">
+            <li class="list-inline-item col-xs-12 col-sm-4">
+              <a href="https://github.com/">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span class="text">www.github.com/example</span>
+              </a>
+            </li>
+            <li class="list-inline-item col-xs-12 col-sm-4">
+              <a href="https://www.linkedin.com">
+                <span class="icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="text">www.linkedin.com/example</span>
+              </a>
+            </li>
+            <li class="list-inline-item col-xs-12 col-sm-4">
+              <a href="https://twitter.com/">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span class="text">www.twitter.com/example</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="container">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item">
+              <address>
+                Address: 9A Stanley Ave, Wembley HA0 4JA, UK
+              </address>
+            </li>
+            <li class="list-inline-item">
+              Call:
+              <a href="tel:+443069990110">+44 3069 990110</a>
+            </li>
+            <li class="list-inline-item">
+              Email:
+              <a href="mailto:davidsmith@example.com">davidsmith@example.com</a>
+            </li>
+          </ul>
+          <a class="website" href="http://example.com/">www.example.com</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
