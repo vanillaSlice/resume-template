@@ -358,23 +358,23 @@
   background-color: #d9d9d9;
   border-radius: 50%;
   display: inline-block;
-  height: 6.25rem; /* 100px */
+  height: 5.625rem; /* 90px */
   overflow: hidden;
   position: relative;
-  width: 6.25rem; /* 100px */
+  width: 5.625rem; /* 90px */
 }
 
 .progress-circle__center {
   background-color: #f0f0f0;
   border-radius: 50%;
-  font-size: 0.75rem; /* 12px */
-  height: 5.25rem; /* 84px */
+  font-size: 0.625rem; /* 10px */
+  height: 4.625rem; /* 74px */
   left: 0.5rem; /* 8px */
-  line-height: 5.25rem; /* 84px */
+  line-height: 4.625rem; /* 74px */
   position: absolute;
   text-align: center;
   top: 0.5rem; /* 8px */
-  width: 5.25rem; /* 84px */
+  width: 4.625rem; /* 74px */
   z-index: 3;
 }
 
