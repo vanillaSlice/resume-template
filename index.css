@@ -6,7 +6,6 @@
  *   Background White:         #f9f9f9
  *   Header/Footer Dark Blue:  #1b88cd
  *   Header/Footer Light Blue: #22a1dc
- *   Heading Dark Blue:        #2780aa
  *   Statement Grey:           #576268
  *   Text Grey:                #3c3c3c
  */
@@ -20,6 +19,7 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
   outline: none;
 }
 
@@ -29,6 +29,7 @@
 
 .body {
   background: #26272b url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"%3E%3Cpath fill="%23404145" fill-opacity="0.71" d="M1 3h1v1H1V3zm2-2h1v1H3V1z"%3E%3C/path%3E%3C/svg%3E');
+  color: #3c3c3c;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.875rem; /* 14px */
   padding: 0.9375rem; /* 15px */
@@ -69,7 +70,7 @@
           box-shadow: 0 0 0.625rem -0.0625rem #000; /* 10px -1px */
   position: relative;
   text-align: center;
-  z-index: 3;
+  z-index: 2;
 }
 
 .header__nav {
@@ -145,10 +146,6 @@
  * Page
  */
 
-.page {
-  color: #3c3c3c;
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,39 +170,39 @@
           box-shadow: 0 0 0.625rem -0.25rem #000; /* 10px -4px */
 }
 
-.heading {
-  color: #2780aa;
-  font-size: 1rem; /* 16px */
-  font-weight: bold;
-  margin-bottom: 1rem; /* 16px */
-}
-
 .sidebar,
 .main {
   line-height: 1.25rem; /* 20px */
 }
 
-.sidebar__separator {
+.page__heading {
+  color: #22a1dc;
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  margin-bottom: 1rem; /* 16px */
+}
+
+.page__separator {
   border: 0.0625rem solid #dfdfdf; /* 1px */
   margin: 1.25rem 0; /* 20px */
 }
 
-.main__text {
+.page__text {
   margin-top: 1rem; /* 16px */
 }
 
-.main__text:first-child {
+.page__text:first-child {
   margin-top: 0;
 }
 
-.main__link {
-  color: #2780aa;
+.page__link {
+  color: #22a1dc;
   font-weight: bold;
   text-decoration: none;
 }
 
-.main__link:focus,
-.main__link:hover {
+.page__link:focus,
+.page__link:hover {
   text-decoration: underline;
 }
 
@@ -227,6 +224,119 @@
 .statement__text {
   color: rgba(255, 2555, 255, 0.75);
   line-height: 1.25rem; /* 20px */
+}
+
+.sidebar__row {
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.75rem; /* 12px */
+}
+
+.sidebar__row:last-child {
+  margin-bottom: 1.875rem; /* 30px */
+}
+
+.sidebar__row--underlined {
+  border-bottom: 0.125rem solid #dfdfdf; /* 2px */
+  padding-bottom: 0.75rem; /* 12px */
+}
+
+.sidebar__row__left {
+  font-weight: bold;
+  min-width: 7.5rem; /* 120px */
+}
+
+.sidebar__row__right {
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: #d9d9d9;
+  display: block;
+  height: 0.5rem; /* 8px */ 
+  width: 100%;
+}
+
+.progress-bar .fill {
+  background-color: #2780aa;
+  display: block;
+  height: 0.5rem; /* 8px */ 
+}
+
+.progress-bar .fill-10 {
+  width: 10%;
+}
+
+.progress-bar .fill-20 {
+  width: 20%;
+}
+
+.progress-bar .fill-30 {
+  width: 30%;
+}
+
+.progress-bar .fill-40 {
+  width: 40%;
+}
+
+.progress-bar .fill-50 {
+  width: 50%;
+}
+
+.progress-bar .fill-60 {
+  width: 60%;
+}
+
+.progress-bar .fill-70 {
+  width: 70%;
+}
+
+.progress-bar .fill-80 {
+  width: 80%;
+}
+
+.progress-bar .fill-90 {
+  width: 90%;
+}
+
+.progress-bar .fill-100 {
+  width: 100%;
+}
+
+.hobbies__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hobby {
+  display: inline-block;
+  -ms-flex-preferred-size: 33.33333%;
+               flex-basis: 33.33333%;
+  text-align: center;
+}
+
+.hobby__icon {
+  background-color: #a2d4ed;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-block;
+  font-size: 2.5rem; /* 40px */
+  height: 5rem; /* 80px */
+  line-height: 5rem; /* 80px */
+  width: 5rem; /* 80px */
+}
+
+.hobby__text {
+  display: block;
+  font-size: 0.75rem; /* 12px */
+  line-height: 2.25rem; /* 36px */
 }
 
 .project {
@@ -255,7 +365,7 @@
 .footer {
   position: relative;
   text-align: center;
-  z-index: 3;
+  z-index: 2;
 }
 
 .footer__social {

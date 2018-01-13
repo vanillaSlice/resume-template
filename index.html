@@ -55,33 +55,33 @@
     <div class="page" id="hello">
       <div class="row">
         <div class="row__left row__left--sm sidebar">
-          <h3 class="sidebar__heading heading">To</h3>
-          <address>
+          <h3 class="page__heading">To</h3>
+          <address class="page__text">
             John Doe<br>
             7 Thorns Villa Gardens<br>
             Worsley<br>
             Manchester M28 1UT<br>
             UK
           </address>
-          <hr class="sidebar__separator">
-          <h3 class="sidebar__heading heading">Position</h3>
-          <p>Web Developer</p>
-          <hr class="sidebar__separator">
-          <h3 class="sidebar__heading heading">Reference No.</h3>
-          <p>APP1234567890</p>
-          <hr class="sidebar__separator">
-          <h3 class="sidebar__heading heading">Date</h3>
-          <p>15<sup>th</sup> January 2017</p>
-          <hr class="sidebar__separator">
+          <hr class="page__separator">
+          <h3 class="page__heading">Position</h3>
+          <p class="page__text">Web Developer</p>
+          <hr class="page__separator">
+          <h3 class="page__heading">Reference No.</h3>
+          <p class="page__text">APP1234567890</p>
+          <hr class="page__separator">
+          <h3 class="page__heading">Date</h3>
+          <p class="page__text">15<sup>th</sup> January 2017</p>
+          <hr class="page__separator">
         </div>
         <div class="row__right row__right--lg row__right--top main letter">
-          <p class="main__text">Dear Mr Jones,</p>
-          <p class="main__text">
+          <p class="page__text">Dear Mr Jones,</p>
+          <p class="page__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Odio facilisis mauris sit amet massa vitae tortor condimentum. Fermentum leo vel orci porta non pulvinar neque.
             Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin.
           </p>
-          <p class="main__text">
+          <p class="page__text">
             Pellentesque elit ullamcorper dignissim cras tincidunt. Ac tortor dignissim convallis aenean et tortor at. Risus feugiat
             in ante metus dictum at tempor commodo ullamcorper. Quam elementum pulvinar etiam non. Quis blandit turpis cursus
             in hac habitasse platea dictumst. Scelerisque fermentum dui faucibus in ornare quam viverra orci. Leo in vitae
@@ -89,24 +89,24 @@
             volutpat. Mauris augue neque gravida in fermentum et sollicitudin ac. Justo laoreet sit amet cursus sit amet
             dictum sit.
           </p>
-          <p class="main__text">
+          <p class="page__text">
             Adipiscing commodo elit at imperdiet dui accumsan. Pulvinar neque laoreet suspendisse interdum consectetur. Egestas tellus
             rutrum tellus pellentesque eu tincidunt tortor aliquam. Maecenas volutpat blandit aliquam etiam erat velit scelerisque.
             Ipsum nunc aliquet bibendum enim facilisis gravida neque.
           </p>
-          <p class="main__text">
+          <p class="page__text">
             Dui accumsan sit amet nulla facilisi morbi. Ornare arcu dui vivamus arcu. Sed cras ornare arcu dui vivamus arcu felis bibendum
             ut. Magna sit amet purus gravida quis. A erat nam at lectus urna duis convallis convallis. At varius vel pharetra
             vel turpis nunc eget. Sed augue lacus viverra vitae congue eu consequat ac.
           </p>
-          <p class="main__text">
+          <p class="page__text">
             Ornare quam viverra orci sagittis. Quam quisque id diam vel quam elementum pulvinar etiam non. Ultrices in iaculis nunc sed
             augue lacus. Cursus risus at ultrices mi tempus imperdiet. Amet commodo nulla facilisi nullam vehicula ipsum
             a arcu cursus. Tellus mauris a diam maecenas sed enim. Scelerisque mauris pellentesque pulvinar pellentesque
             habitant morbi tristique. In fermentum posuere urna nec tincidunt praesent.
           </p>
           <img class="letter__signature" src="./signature.png" alt="Signature" width="300" height="72">
-          <p class="main__text">
+          <p class="page__text">
             <span class="letter__name">David Smith</span>
             Web Developer
           </p>
@@ -127,17 +127,118 @@
       </div>
       <div class="row">
         <div class="row__left row__left--sm row__left--top sidebar">
-          <h3 class="sidebar__heading heading">Personal</h3>
-          <hr class="sidebar__separator">
-          <h3 class="sidebar__heading heading">Software</h3>
-          <hr class="sidebar__separator">
-          <h3 class="sidebar__heading heading">Hobbies</h3>
-          <hr class="sidebar__separator">
+          <div class="personal">
+            <h3 class="page__heading">Personal</h3>
+            <div class="sidebar__row sidebar__row--underlined">
+              <span class="sidebar__row__left">Name</span>
+              <span class="sidebar__row__right">David Smith</span>
+            </div>
+            <div class="sidebar__row sidebar__row--underlined">
+              <span class="sidebar__row__left">Birthday</span>
+              <span class="sidebar__row__right">31<sup>st</sup> December 1990</span>
+            </div>
+            <div class="sidebar__row sidebar__row--underlined">
+              <span class="sidebar__row__left">Relationship</span>
+              <span class="sidebar__row__right">Single</span>
+            </div>
+            <div class="sidebar__row sidebar__row--underlined">
+              <span class="sidebar__row__left">Nationality</span>
+              <span class="sidebar__row__right">British</span>
+            </div>
+            <div class="sidebar__row sidebar__row--underlined">
+              <span class="sidebar__row__left">Languages</span>
+              <span class="sidebar__row__right">English, French</span>
+            </div>
+            <div class="sidebar__row sidebar__row--underlined">
+              <span class="sidebar__row__left">Telephone</span>
+              <span class="sidebar__row__right">+44 3069 990110</span>
+            </div>
+          </div>
+          <div class="software">
+            <h3 class="page__heading">Software</h3>
+            <div class="sidebar__row">
+              <span class="sidebar__row__left">HTML5</span>
+              <span class="sidebar__row__right">
+                <span class="progress-bar"><span class="fill fill-100"></span></span>
+              </span>
+            </div>
+            <div class="sidebar__row">
+              <span class="sidebar__row__left">CSS3</span>
+              <span class="sidebar__row__right">
+                <span class="progress-bar"><span class="fill fill-90"></span></span>
+              </span>
+            </div>
+            <div class="sidebar__row">
+              <span class="sidebar__row__left">JavaScript</span>
+              <span class="sidebar__row__right">
+                <span class="progress-bar"><span class="fill fill-70"></span></span>
+              </span>
+            </div>
+            <div class="sidebar__row">
+              <span class="sidebar__row__left">jQuery</span>
+              <span class="sidebar__row__right">
+                <span class="progress-bar"><span class="fill fill-60"></span></span>
+              </span>
+            </div>
+            <div class="sidebar__row">
+              <span class="sidebar__row__left">React</span>
+              <span class="sidebar__row__right">
+                <span class="progress-bar"><span class="fill fill-50"></span></span>
+              </span>
+            </div>
+            <div class="sidebar__row">
+              <span class="sidebar__row__left">SCSS</span>
+              <span class="sidebar__row__right">
+                <span class="progress-bar"><span class="fill fill-30"></span></span>
+              </span>
+            </div>
+          </div>
+          <div class="hobbies">
+            <h3 class="page__heading">Hobbies</h3>
+            <div class="hobbies__icons">
+              <div class="hobby">
+                <span class="hobby__icon">
+                  <i class="fas fa-laptop"></i>
+                </span>
+                <span class="hobby__text">Writing</span>
+              </div>
+              <div class="hobby">
+                <span class="hobby__icon">
+                  <i class="fas fa-plane"></i>
+                </span>
+                <span class="hobby__text">Travelling</span>
+              </div>
+              <div class="hobby">
+                <span class="hobby__icon">
+                  <i class="fas fa-gamepad"></i>
+                </span>
+                <span class="hobby__text">Gaming</span>
+              </div>
+              <div class="hobby">
+                <span class="hobby__icon">
+                  <i class="fas fa-camera-retro"></i>
+                </span>
+                <span class="hobby__text">Photography</span>
+              </div>
+              <div class="hobby">
+                <span class="hobby__icon">
+                  <i class="fas fa-headphones"></i>
+                </span>
+                <span class="hobby__text">Music</span>
+              </div>
+              <div class="hobby">
+                <span class="hobby__icon">
+                  <i class="fas fa-book"></i>
+                </span>
+                <span class="hobby__text">Reading</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row__right row__right--lg row__right main">
-          <h3 class="main__heading heading">Work</h3>
-          <h3 class="main__heading heading">Professional Skills</h3>
-          <h3 class="main__heading heading">Education</h3>
+          <h3 class="page__heading">Work</h3>
+          <h3 class="page__heading">Professional Skills</h3>
+          <h3 class="page__heading">Education</h3>
         </div>
       </div>
     </div>
@@ -146,7 +247,7 @@
     <div class="page hidden" id="portfolio">
       <div class="row">
         <div class="row__left row__left--sm row__left--top main">
-          <h3 class="main__heading heading">Project 1</h3>
+          <h3 class="page__heading">Project 1</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras
@@ -155,16 +256,16 @@
             Egestas maecenas pharetra convallis posuere morbi leo. In mollis nunc sed id semper risus
             in hendrerit.
           </p>
-          <p class="main__text">
-            <a class="main__link" href="http://example.com/">www.example.com</a>
+          <p class="page__text">
+            <a class="page__link" href="http://example.com/">www.example.com</a>
           </p>
         </div>
         <div class="row__right row__right--lg project" id="project-1"></div>
       </div>
       <div class="row row--reverse">
         <div class="row__right row__right--sm row__right--top main">
-          <h3 class="main__heading heading">Project 2</h3>
-          <p class="main__text">
+          <h3 class="page__heading">Project 2</h3>
+          <p class="page__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras
             semper auctor neque. Nisl purus in mollis nunc sed. Etiam sit amet nisl purus in.
@@ -172,15 +273,15 @@
             Egestas maecenas pharetra convallis posuere morbi leo. In mollis nunc sed id semper risus
             in hendrerit.
           </p>
-          <p class="main__text">
-            <a class="main__link" href="http://example.com/">www.example.com</a>
+          <p class="page__text">
+            <a class="page__link" href="http://example.com/">www.example.com</a>
           </p>
         </div>
         <div class="row__left row__left--lg project" id="project-2"></div>
       </div>
       <div class="row">
         <div class="row__left row__left--sm row__left--top main">
-          <h3 class="main__heading heading">Project 3</h3>
+          <h3 class="page__heading">Project 3</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras
@@ -189,8 +290,8 @@
             Egestas maecenas pharetra convallis posuere morbi leo. In mollis nunc sed id semper risus
             in hendrerit.
           </p>
-          <p class="main__text">
-            <a class="main__link" href="http://example.com/">www.example.com</a>
+          <p class="page__text">
+            <a class="page__link" href="http://example.com/">www.example.com</a>
           </p>
         </div>
         <div class="row__right row__right--lg project" id="project-3"></div>
