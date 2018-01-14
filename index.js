@@ -1,6 +1,6 @@
-window.addEventListener('load', function() {
+'use strict';
 
-  'use strict';
+window.addEventListener('load', function() {
 
   var pageBtns = [].slice.call(document.querySelectorAll('input[name="page"]'));
   var pages = [].slice.call(document.querySelectorAll('.page'));

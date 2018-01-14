@@ -1,16 +1,4 @@
 /*
- * Colours:
- *
- *   Background Dark Grey:     #26272b
- *   Background Light Grey:    #f0f0f0
- *   Background White:         #f9f9f9
- *   Header/Footer Dark Blue:  #1b88cd
- *   Header/Footer Light Blue: #22a1dc
- *   Statement Grey:           #576268
- *   Text Grey:                #3c3c3c
- */
-
-/*
  * General
  */
 
@@ -21,6 +9,7 @@
           box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   outline: none;
+  word-break: break-word;
 }
 
 /*
@@ -41,8 +30,8 @@
 
 .container {
   margin: 0 auto;
-  max-width: 58.75rem; /* 940px */
   padding: 0 0.9375rem; /* 15px */
+  width: 100%;
 }
 
 .hidden {
@@ -57,7 +46,6 @@
   background-color: #f0f0f0;
   -webkit-box-shadow: 0 0 0.625rem 0.0625rem #000; /* 10px 1px */
           box-shadow: 0 0 0.625rem 0.0625rem #000; /* 10px 1px */
-  max-width: 68.125rem; /* 1090px */
   width: 100%;
 }
 
@@ -135,7 +123,7 @@
 
 .header__name {
   font-size: 2.875rem; /* 46px */
-  margin: 1rem 0 0.75rem; /* 16px 12px */
+  margin: 0.9375rem 0 0.625rem; /* 15px 10px */
 }
 
 .header__job {
@@ -146,7 +134,7 @@
  * Page
  */
 
-.row {
+.page__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,13 +146,13 @@
       flex-wrap: wrap;
 }
 
-.row__left,
-.row__right {
+.page__row__left,
+.page__row__right {
   padding: 2.8125rem 0.9375rem; /* 45px 15px */
 }
 
-.row__left--top,
-.row__right--top {
+.page__row__left--top,
+.page__row__right--top {
   background-color: #f9f9f9;
   -webkit-box-shadow: 0 0 0.625rem -0.25rem #000; /* 10px -4px */
           box-shadow: 0 0 0.625rem -0.25rem #000; /* 10px -4px */
@@ -182,17 +170,17 @@
   margin-bottom: 1rem; /* 16px */
 }
 
-.page__separator {
-  border: 0.0625rem solid #dfdfdf; /* 1px */
-  margin: 1.25rem 0; /* 20px */
-}
-
 .page__text {
   margin-top: 1rem; /* 16px */
 }
 
 .page__text:first-child {
   margin-top: 0;
+}
+
+.page__separator {
+  border: 0.0625rem solid #dfdfdf; /* 1px */
+  margin: 1.25rem 0; /* 20px */
 }
 
 .page__link {
@@ -204,6 +192,14 @@
 .page__link:focus,
 .page__link:hover {
   text-decoration: underline;
+}
+
+.page__section {
+  margin-bottom: 1.875rem; /* 30px */
+}
+
+.page__section:last-child {
+  margin-bottom: 0;
 }
 
 .letter__signature {
@@ -222,7 +218,7 @@
 }
 
 .statement__text {
-  color: rgba(255, 2555, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   line-height: 1.25rem; /* 20px */
 }
 
@@ -234,10 +230,6 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.75rem; /* 12px */
-}
-
-.sidebar__row:last-child {
-  margin-bottom: 1.875rem; /* 30px */
 }
 
 .sidebar__row--underlined {
@@ -339,42 +331,13 @@
   line-height: 2.25rem; /* 36px */
 }
 
-.work,
-.skills,
-.education {
-  margin-bottom: 2rem; /* 32px */
-}
-
-.work__row {
+.checkpoint {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.work__details {
-  width: 100%;
-}
-
-.work__title,
-.work__date {
-  font-weight: bold;
-}
-
-.work__date {
-  display: block;
-}
-
-.work__text {
-  border-bottom: 0.125rem solid #dfdfdf; /* 2px */
-  margin-bottom: 1.25rem; /* 20px */
-  padding: 0.5rem 0; /* 8px */
-}
-
-.work__row:last-child .work__text {
-  margin-bottom: 0;
-}
-
-.checkpoint {
+.checkpoint__graphic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,33 +348,56 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20px;
-  margin-right: 20px;
+  width: 1.25rem; /* 20px */
+  margin-right: 1.25rem; /* 20px */
 }
 
 .checkpoint__point {
   background-color: #a2d4ed;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 1.25rem; /* 20px */
+  width: 1.25rem; /* 20px */
 }
 
-.checkpoint__point__center {
+.checkpoint__center {
   background-color: #2780aa;
   border-radius: 50%;
-  height: 10px;
+  height: 0.625rem; /* 10px */
+  left: 0.3125rem; /* 5px */
   position: relative;
-  left: 5px;
-  top: 5px;
-  width: 10px;
+  top: 0.3125rem; /* 5px */
+  width: 0.625rem; /* 10px */
 }
 
 .checkpoint__line {
   background-color: #2780aa;
-  width: 1px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  width: 0.0625rem; /* 1px */
+}
+
+.checkpoint__details {
+  width: 100%;
+}
+
+.checkpoint__title,
+.checkpoint__date {
+  font-weight: bold;
+}
+
+.checkpoint__date {
+  display: block;
+}
+
+.checkpoint__text {
+  border-bottom: 0.125rem solid #dfdfdf; /* 2px */
+  margin-bottom: 1.25rem; /* 20px */
+  padding: 0.5rem 0 1rem; /* 8px 16px */
+}
+
+.checkpoint:last-child .checkpoint__text {
+  margin-bottom: 0;
 }
 
 .skills {
@@ -424,7 +410,7 @@
 
 .skill {
   display: inline-block;
-  margin-bottom: 1rem; /* 16px */
+  margin: 1rem 0; /* 16px */
   text-align: center;
   width: 33.33333%;
 }
@@ -628,6 +614,14 @@
 /* devices 768px and above */
 @media (min-width: 48em) {
   /*
+   * Helpers
+   */
+
+  .container {
+    max-width: 58.75rem; /* 940px */
+  }
+
+  /*
    * Header
    */
  
@@ -658,31 +652,31 @@
    * Page
    */
   
-  .row {
+  .page__row {
        -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
        -ms-flex-direction: row;
            flex-direction: row;
   }
 
-  .row--reverse {
+  .page__row--reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
 
-  .row__left--sm,
-  .row__right--sm {
+  .page__row__left--sm,
+  .page__row__right--sm {
     width: 40%;
   }
 
-  .row__left--lg,
-  .row__right--lg {
+  .page__row__left--lg,
+  .page__row__right--lg {
     width: 60%;
   }
 
-  .work__date {
+  .checkpoint__date {
     float: right;
   }
 
@@ -733,6 +727,12 @@
   .footer {
     text-align: left;
   }
+
+  .footer__details__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
  
   .footer__contact-details {
     display: inline-block;
@@ -744,7 +744,7 @@
   }
  
   .footer__website {
-    float: right;
+    margin-left: auto;
   }
 }
 
@@ -762,12 +762,12 @@
    * Page
    */
  
-  .row__left {
+  .page__row__left {
     padding-left: 5.625rem; /* 90px */
     padding-right: 2.8125rem; /* 45px */
   }
     
-  .row__right {
+  .page__row__right {
     padding-left: 2.8125rem; /* 45px */
     padding-right: 5.625rem; /* 90px */
   }

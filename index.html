@@ -53,8 +53,8 @@
 
     <!-- hello page -->
     <div class="page" id="hello">
-      <div class="row">
-        <div class="row__left row__left--sm sidebar">
+      <div class="page__row">
+        <div class="page__row__left page__row__left--sm sidebar">
           <h3 class="page__heading">To</h3>
           <address class="page__text">
             John Doe<br>
@@ -74,7 +74,7 @@
           <p class="page__text">15<sup>th</sup> January 2017</p>
           <hr class="page__separator">
         </div>
-        <div class="row__right row__right--lg row__right--top main letter">
+        <div class="page__row__right page__row__right--lg page__row__right--top main letter">
           <p class="page__text">Dear Mr Jones,</p>
           <p class="page__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -125,9 +125,9 @@
           </p>
         </div>   
       </div>
-      <div class="row">
-        <div class="row__left row__left--sm row__left--top sidebar">
-          <div class="personal">
+      <div class="page__row">
+        <div class="page__row__left page__row__left--sm page__row__left--top sidebar">
+          <section class="page__section">
             <h3 class="page__heading">Personal</h3>
             <div class="sidebar__row sidebar__row--underlined">
               <span class="sidebar__row__left">Name</span>
@@ -153,8 +153,8 @@
               <span class="sidebar__row__left">Telephone</span>
               <span class="sidebar__row__right">+44 3069 990110</span>
             </div>
-          </div>
-          <div class="software">
+          </section>
+          <section class="page__section">
             <h3 class="page__heading">Software</h3>
             <div class="sidebar__row">
               <span class="sidebar__row__left">HTML5</span>
@@ -192,8 +192,8 @@
                 <span class="progress-bar"><span class="fill fill-30"></span></span>
               </span>
             </div>
-          </div>
-          <div class="hobbies">
+          </section>
+          <section class="page__section">
             <h3 class="page__heading">Hobbies</h3>
             <div class="hobbies__icons">
               <div class="hobby">
@@ -233,127 +233,129 @@
                 <span class="hobby__text">Reading</span>
               </div>
             </div>
-          </div>
+          </section>
         </div>
-        <div class="row__right row__right--lg row__right main">
-          <h3 class="page__heading">Work</h3>
-          <div class="work">
-            <div class="work__row">
-              <div class="checkpoint">
+        <div class="page__row__right page__row__right--lg page__row__right main">
+          <div class="page__section">
+            <h3 class="page__heading">Work</h3>
+            <div class="checkpoint">
+              <div class="checkpoint__graphic">
                 <div class="checkpoint__point">
-                  <div class="checkpoint__point__center"></div>
+                  <div class="checkpoint__center"></div>
                 </div>
                 <div class="checkpoint__line"></div>
               </div>
-              <div class="work__details">
-                <span class="work__title">Web Developer @ Big Cheese, Manchester</span>
-                <span class="work__date">2015</span>
-                <p class="work__text">
+              <div class="checkpoint__details">
+                <span class="checkpoint__title">Web Developer @ Company, Manchester</span>
+                <span class="checkpoint__date">2015</span>
+                <p class="checkpoint__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
-            <div class="work__row">
-              <div class="checkpoint">
+            <div class="checkpoint">
+              <div class="checkpoint__graphic">
                 <div class="checkpoint__point">
-                  <div class="checkpoint__point__center"></div>
+                  <div class="checkpoint__center"></div>
                 </div>
                 <div class="checkpoint__line"></div>
               </div>
-              <div class="work__details">
-                <span class="work__title">Web Developer @ Big Cheese, Manchester</span>
-                <span class="work__date">2015</span>
-                <p class="work__text">
+              <div class="checkpoint__details">
+                <span class="checkpoint__title">Developer @ Company, Liverpool</span>
+                <span class="checkpoint__date">2013</span>
+                <p class="checkpoint__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
-            <div class="work__row">
-              <div class="checkpoint">
+            <div class="checkpoint">
+              <div class="checkpoint__graphic">
                 <div class="checkpoint__point">
-                  <div class="checkpoint__point__center"></div>
+                  <div class="checkpoint__center"></div>
                 </div>
                 <div class="checkpoint__line"></div>
               </div>
-              <div class="work__details">
-                <span class="work__title">Web Developer @ Big Cheese, Manchester</span>
-                <span class="work__date">2015</span>
-                <p class="work__text">
+              <div class="checkpoint__details">
+                <span class="checkpoint__title">Junior Developer @ Company, Liverpool</span>
+                <span class="checkpoint__date">2011</span>
+                <p class="checkpoint__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
           </div>
-          <h3 class="page__heading">Professional Skills</h3>
-          <div class="skills">
-            <div class="skill">
-              <div class="progress-circle fill-100">
-                <div class="progress-circle__center">Programming</div>
-                <div class="progress-circle__left"></div>
-                <div class="progress-circle__right"></div>
+          <div class="page__section">     
+            <h3 class="page__heading">Professional Skills</h3>
+            <div class="skills">
+              <div class="skill">
+                <div class="progress-circle fill-100">
+                  <div class="progress-circle__center">Programming</div>
+                  <div class="progress-circle__left"></div>
+                  <div class="progress-circle__right"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill">
-            <div class="progress-circle fill-60">
-                <div class="progress-circle__center">Team Work</div>
-                <div class="progress-circle__left"></div>
-                <div class="progress-circle__right"></div>
+              <div class="skill">
+              <div class="progress-circle fill-60">
+                  <div class="progress-circle__center">Team Work</div>
+                  <div class="progress-circle__left"></div>
+                  <div class="progress-circle__right"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill">
-              <div class="progress-circle fill-80">
-                <div class="progress-circle__center">Management</div>
-                <div class="progress-circle__left"></div>
-                <div class="progress-circle__right"></div>
+              <div class="skill">
+                <div class="progress-circle fill-80">
+                  <div class="progress-circle__center">Management</div>
+                  <div class="progress-circle__left"></div>
+                  <div class="progress-circle__right"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill">
-              <div class="progress-circle fill-90">
-                <div class="progress-circle__center">Organisation</div>
-                <div class="progress-circle__left"></div>
-                <div class="progress-circle__right"></div>
+              <div class="skill">
+                <div class="progress-circle fill-90">
+                  <div class="progress-circle__center">Organisation</div>
+                  <div class="progress-circle__left"></div>
+                  <div class="progress-circle__right"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill">
-              <div class="progress-circle fill-70">
-                <div class="progress-circle__center">Design</div>
-                <div class="progress-circle__left"></div>
-                <div class="progress-circle__right"></div>
+              <div class="skill">
+                <div class="progress-circle fill-70">
+                  <div class="progress-circle__center">Design</div>
+                  <div class="progress-circle__left"></div>
+                  <div class="progress-circle__right"></div>
+                </div>
               </div>
             </div>
           </div>
-          <h3 class="page__heading">Education</h3>
-          <div class="education">
-            <div class="work__row">
-              <div class="checkpoint">
+          <div class="page__section">
+            <h3 class="page__heading">Education</h3>
+            <div class="checkpoint">
+              <div class="checkpoint__graphic">
                 <div class="checkpoint__point">
-                  <div class="checkpoint__point__center"></div>
+                  <div class="checkpoint__center"></div>
                 </div>
                 <div class="checkpoint__line"></div>
               </div>
-              <div class="work__details">
-                <span class="work__title">Web Developer @ Big Cheese, Manchester</span>
-                <span class="work__date">2015</span>
-                <p class="work__text">
+              <div class="checkpoint__details">
+                <span class="checkpoint__title">MSc Computer Science @ Manchester</span>
+                <span class="checkpoint__date">2010</span>
+                <p class="checkpoint__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>
-            <div class="work__row">
-              <div class="checkpoint">
+            <div class="checkpoint">
+              <div class="checkpoint__graphic">
                 <div class="checkpoint__point">
-                  <div class="checkpoint__point__center"></div>
+                  <div class="checkpoint__center"></div>
                 </div>
                 <div class="checkpoint__line"></div>
               </div>
-              <div class="work__details">
-                <span class="work__title">Web Developer @ Big Cheese, Manchester</span>
-                <span class="work__date">2015</span>
-                <p class="work__text">
+              <div class="checkpoint__details">
+                <span class="checkpoint__title">BSc Computer Science @ Manchester</span>
+                <span class="checkpoint__date">2011</span>
+                <p class="checkpoint__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -366,8 +368,8 @@
 
     <!-- portfolio page -->
     <div class="page hidden" id="portfolio">
-      <div class="row">
-        <div class="row__left row__left--sm row__left--top main">
+      <div class="page__row">
+        <div class="page__row__left page__row__left--sm page__row__left--top main">
           <h3 class="page__heading">Project 1</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -381,10 +383,10 @@
             <a class="page__link" href="http://example.com/">www.example.com</a>
           </p>
         </div>
-        <div class="row__right row__right--lg project" id="project-1"></div>
+        <div class="page__row__right page__row__right--lg project" id="project-1"></div>
       </div>
-      <div class="row row--reverse">
-        <div class="row__right row__right--sm row__right--top main">
+      <div class="page__row page__row--reverse">
+        <div class="page__row__right page__row__right--sm page__row__right--top main">
           <h3 class="page__heading">Project 2</h3>
           <p class="page__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -398,10 +400,10 @@
             <a class="page__link" href="http://example.com/">www.example.com</a>
           </p>
         </div>
-        <div class="row__left row__left--lg project" id="project-2"></div>
+        <div class="page__row__left page__row__left--lg project" id="project-2"></div>
       </div>
-      <div class="row">
-        <div class="row__left row__left--sm row__left--top main">
+      <div class="page__row">
+        <div class="page__row__left page__row__left--sm page__row__left--top main">
           <h3 class="page__heading">Project 3</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -415,7 +417,7 @@
             <a class="page__link" href="http://example.com/">www.example.com</a>
           </p>
         </div>
-        <div class="row__right row__right--lg project" id="project-3"></div>
+        <div class="page__row__right page__row__right--lg project" id="project-3"></div>
       </div>
     </div>
 
