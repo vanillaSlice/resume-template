@@ -339,6 +339,81 @@
   line-height: 2.25rem; /* 36px */
 }
 
+.work,
+.skills,
+.education {
+  margin-bottom: 2rem; /* 32px */
+}
+
+.work__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work__details {
+  width: 100%;
+}
+
+.work__title,
+.work__date {
+  font-weight: bold;
+}
+
+.work__date {
+  display: block;
+}
+
+.work__text {
+  border-bottom: 0.125rem solid #dfdfdf; /* 2px */
+  margin-bottom: 1.25rem; /* 20px */
+  padding: 0.5rem 0; /* 8px */
+}
+
+.work__row:last-child .work__text {
+  margin-bottom: 0;
+}
+
+.checkpoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  margin-right: 20px;
+}
+
+.checkpoint__point {
+  background-color: #a2d4ed;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.checkpoint__point__center {
+  background-color: #2780aa;
+  border-radius: 50%;
+  height: 10px;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+}
+
+.checkpoint__line {
+  background-color: #2780aa;
+  width: 1px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
 .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +680,10 @@
   .row__left--lg,
   .row__right--lg {
     width: 60%;
+  }
+
+  .work__date {
+    float: right;
   }
 
   .project {
