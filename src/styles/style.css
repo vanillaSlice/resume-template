@@ -5,10 +5,9 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
   word-break: break-word;
 }
 
@@ -44,8 +43,7 @@
 
 .paper {
   background-color: #f0f0f0;
-  -webkit-box-shadow: 0 0 0.625rem 0.0625rem #000; /* 10px 1px */
-          box-shadow: 0 0 0.625rem 0.0625rem #000; /* 10px 1px */
+  box-shadow: 0 0 0.625rem 0.0625rem #000; /* 10px 1px */
   width: 100%;
 }
 
@@ -54,8 +52,7 @@
  */
 
 .header {
-  -webkit-box-shadow: 0 0 0.625rem -0.0625rem #000; /* 10px -1px */
-          box-shadow: 0 0 0.625rem -0.0625rem #000; /* 10px -1px */
+  box-shadow: 0 0 0.625rem -0.0625rem #000; /* 10px -1px */
   position: relative;
   text-align: center;
   z-index: 2;
@@ -88,7 +85,7 @@
 
 .header__label:focus,
 .header__label:hover,
-.header__btn:checked + .header__label {
+.header__btn:checked+.header__label {
   border-bottom-color: rgba(255, 255, 255, 0.85);
   color: rgba(255, 255, 255, 0.85);
 }
@@ -100,16 +97,9 @@
 }
 
 .header__branding__container {
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-     -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -ms-flex-direction: column;
-         flex-direction: column;
+  flex-direction: column;
 }
 
 .header__img {
@@ -135,15 +125,9 @@
  */
 
 .page__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-     -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -ms-flex-direction: column;
-         flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .page__row__left,
@@ -154,8 +138,7 @@
 .page__row__left--top,
 .page__row__right--top {
   background-color: #f9f9f9;
-  -webkit-box-shadow: 0 0 0.625rem -0.25rem #000; /* 10px -4px */
-          box-shadow: 0 0 0.625rem -0.25rem #000; /* 10px -4px */
+  box-shadow: 0 0 0.625rem -0.25rem #000; /* 10px -4px */
 }
 
 .sidebar,
@@ -223,11 +206,7 @@
 }
 
 .sidebar__row {
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
   margin-bottom: 0.75rem; /* 12px */
 }
@@ -300,17 +279,13 @@
 }
 
 .hobbies__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .hobby {
   display: inline-block;
-  -ms-flex-preferred-size: 33.33333%;
-               flex-basis: 33.33333%;
+  flex-basis: 33.33333%;
   text-align: center;
 }
 
@@ -332,22 +307,13 @@
 }
 
 .checkpoint {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .checkpoint__graphic {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
   width: 1.25rem; /* 20px */
   margin-right: 1.25rem; /* 20px */
 }
@@ -371,9 +337,7 @@
 
 .checkpoint__line {
   background-color: #2780aa;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
   width: 0.0625rem; /* 1px */
 }
 
@@ -401,11 +365,8 @@
 }
 
 .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .skill {
@@ -443,8 +404,7 @@
 .progress-circle__right {
   height: 100%;
   position: absolute;
-  -webkit-transform-origin: 100% 50%;
-          transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
   width: 50%;
 }
 
@@ -459,23 +419,19 @@
 }
 
 .progress-circle.fill-10 .progress-circle__right {
-  -webkit-transform: rotate(36deg);
-          transform: rotate(36deg);
+  transform: rotate(36deg);
 }
 
 .progress-circle.fill-20 .progress-circle__right {
-  -webkit-transform: rotate(72deg);
-          transform: rotate(72deg);
+  transform: rotate(72deg);
 }
 
 .progress-circle.fill-30 .progress-circle__right {
-  -webkit-transform: rotate(108deg);
-          transform: rotate(108deg);
+  transform: rotate(108deg);
 }
 
 .progress-circle.fill-40 .progress-circle__right {
-  -webkit-transform: rotate(144deg);
-          transform: rotate(144deg);
+  transform: rotate(144deg);
 }
 
 .progress-circle.fill-50 .progress-circle__right,
@@ -484,8 +440,7 @@
 .progress-circle.fill-80 .progress-circle__right,
 .progress-circle.fill-90 .progress-circle__right,
 .progress-circle.fill-100 .progress-circle__right {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   z-index: 2;
 }
 
@@ -499,23 +454,19 @@
 }
 
 .progress-circle.fill-60 .progress-circle__left {
-  -webkit-transform: rotate(216deg);
-          transform: rotate(216deg);
+  transform: rotate(216deg);
 }
 
 .progress-circle.fill-70 .progress-circle__left {
-  -webkit-transform: rotate(252deg);
-          transform: rotate(252deg);
+  transform: rotate(252deg);
 }
 
 .progress-circle.fill-80 .progress-circle__left {
-  -webkit-transform: rotate(288deg);
-          transform: rotate(288deg);
+  transform: rotate(288deg);
 }
 
 .progress-circle.fill-90 .progress-circle__left {
-  -webkit-transform: rotate(324deg);
-          transform: rotate(324deg);
+  transform: rotate(324deg);
 }
 
 .project {
@@ -630,10 +581,7 @@
   }
 
   .header__branding__container {
-       -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-       -ms-flex-direction: row-reverse;
-           flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 
   .header__details {
@@ -653,17 +601,11 @@
    */
   
   .page__row {
-       -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-       -ms-flex-direction: row;
-           flex-direction: row;
+    flex-direction: row;
   }
 
   .page__row--reverse {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 
   .page__row__left--sm,
@@ -689,10 +631,7 @@
    */
  
   .footer__social-details {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-      -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   
@@ -729,8 +668,6 @@
   }
 
   .footer__details__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
  
