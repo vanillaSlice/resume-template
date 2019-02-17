@@ -526,15 +526,15 @@
 }
 
 #project-1 {
-  background-image: url('./project-1.jpeg');
+  background-image: url('../images/project-1.jpeg');
 }
 
 #project-2 {
-  background-image: url('./project-2.jpeg');
+  background-image: url('../images/project-2.jpeg');
 }
 
 #project-3 {
-  background-image: url('./project-3.jpeg');
+  background-image: url('../images/project-3.jpeg');
 }
 
 /*
@@ -567,12 +567,6 @@
   text-decoration: none;
 }
 
-.footer__social-link:focus .footer__social-icon,
-.footer__social-link:hover .footer__social-icon {
-  background-color: rgba(255, 255, 255, 0.85);
-  color: #22a1dc;
-}
-
 .footer__social-icon {
   border-radius: 50%;
   background-color: #1b88cd;
@@ -582,6 +576,12 @@
   height: 3rem; /* 48px */
   line-height: 3rem; /* 48px */
   width: 3rem; /* 48px */
+}
+
+.footer__social-link:focus .footer__social-icon,
+.footer__social-link:hover .footer__social-icon {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #22a1dc;
 }
 
 .footer__social-text {
