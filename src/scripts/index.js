@@ -1,7 +1,3 @@
-/*
- * DOM Elements
- */
-
 const pageBtnElements = [].slice.call(document.querySelectorAll('input[name="page"]'));
 const pageElements = [].slice.call(document.querySelectorAll('.page'));
 
