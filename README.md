@@ -6,7 +6,7 @@
 
 A clone of [this](https://creativemarket.com/ikonome/686585-Material-Resume-Blue/screenshots/#screenshot1) resume
 template built in plain old HTML and CSS.
-A deployed version can be viewed [here](https://vanillaslice.github.io/resume-template/).
+A deployed version can be viewed [here](https://resumetemplate.mikelowe.xyz/).
 
 ## Screenshot
 
