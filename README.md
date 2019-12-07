@@ -1,7 +1,7 @@
 # Resume Template
 
 [![Latest Release](https://img.shields.io/github/release/vanillaSlice/resume-template.svg)](https://github.com/vanillaSlice/resume-template/releases/latest)
-[![Build Status](https://img.shields.io/travis/vanillaSlice/resume-template/master.svg)](https://travis-ci.org/vanillaSlice/resume-template)
+[![Build Status](https://img.shields.io/travis/com/vanillaSlice/resume-template/master.svg)](https://travis-ci.com/vanillaSlice/resume-template)
 [![License](https://img.shields.io/github/license/vanillaSlice/resume-template.svg)](LICENSE)
 
 A clone of [this](https://creativemarket.com/ikonome/686585-Material-Resume-Blue/screenshots/#screenshot1) resume
